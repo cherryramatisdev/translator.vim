@@ -8,3 +8,6 @@ This plugin need this plugin as dependency [webapi](https://github.com/mattn/web
 # Usage
 
 Just use :Translate to give you three inputs and a empty buffer with the result
+
+# Source API
+[Libre Translate API](https://translate.sysctl.io/)
