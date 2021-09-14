@@ -76,7 +76,7 @@ function! translator#Translate() abort
 	let l:data = get(l:result, 'data')
 
 	if l:status != 200
-		echoerr get(l:data, 'error')
+		echohl Error | echom get(l:data, 'error') | echohl None
 	else
 		call s:CreateBuffer("translate_result", get(l:data, 'translatedText'))
 	endif
