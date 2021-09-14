@@ -1,6 +1,6 @@
 # Translator
 
-[![https://asciinema.org/a/wENAoauQdTeOUqIo8bwfJFsIq](https://asciinema.org/a/wENAoauQdTeOUqIo8bwfJFsIq)](https://asciinema.org/a/wENAoauQdTeOUqIo8bwfJFsIq)
+[![demo](https://asciinema.org/a/wENAoauQdTeOUqIo8bwfJFsIq.png)](https://asciinema.org/a/wENAoauQdTeOUqIo8bwfJFsIq)
 
 This plugins use an libre translator api to prevent you from exiting vim
 
