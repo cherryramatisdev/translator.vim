@@ -3,4 +3,4 @@ if exists('g:loaded_translator')
 endif
 let g:loaded_translator = 1
 
-command! Testando :call translator#Testando()
+command! Translate :call translator#Translate()

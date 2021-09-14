@@ -1,4 +1,4 @@
-function! translator#Testando() abort
+function! translator#Translate() abort
 	let l:from_language = input("From language? ", "en")
 	redraw
 
