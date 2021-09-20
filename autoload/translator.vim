@@ -20,7 +20,7 @@ function! s:TranslateText(target_text, from_language, to_language) abort
 				\ }
 endfunction
 
-function! translator#GetLanguages(...) abort
+function! translator#GetLanguages() abort
 	return [
 				\ 'en:English',
 				\ 'it:Italian',
@@ -44,8 +44,18 @@ function! translator#GetLanguages(...) abort
 				\ ]
 endfunction
 
+function! translator#LanguageCompletor(A, L, P) abort
+	let l:languages = translator#GetLanguages()
+
+	if empty(a:A)
+		return l:languages
+	else
+		return l:languages->matchfuzzy(a:A)
+	endif
+endfunction
+
 function! translator#Translate() abort
-	let l:from_language = input("From language? ", translator#GetLanguages()[0], "customlist,translator#GetLanguages")
+	let l:from_language = input("From language? ", translator#GetLanguages()[0], "customlist,translator#LanguageCompletor")
 	redraw
 
 	if l:from_language == ''
